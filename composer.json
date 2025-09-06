@@ -1,0 +1,32 @@
+{
+  "name": "Beeframework/beemaker",
+  "description": "CLI para Beeframework.",
+  "type": "library",
+  "license": "LGPL-3.0-or-later",
+  "authors": [
+    {
+      "name": "Pablo Joel Aceituno Mayen",
+      "email": "civernet@gmail.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "beemaker\\": "src/"
+    }
+  },
+  "minimum-stability": "stable",
+  "require": {
+    "php": ">=8.0",
+    "ext-zip": "*",
+    "ext-mbstring": "*",
+    "ext-ctype": "*"
+  },
+  "bin": ["bin/beemaker"],
+  "require-dev": {
+    "phpunit/phpunit": "^9.6"
+  },
+  "scripts": {
+    "test": "phpunit",
+    "test-coverage": "phpunit --coverage-html build/coverage"
+  }
+}
