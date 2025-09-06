@@ -11,8 +11,8 @@ Actualmente soporta la instalación inicial del framework, y en próximas versio
 Clona este repositorio en tu máquina:
 
 ```bash
-git clone https://github.com/tuusuario/beeframework-cli.git
-cd beeframework-cli
+git clone https://github.com/DeathPaul1125/beemaker.git
+cd beemaker
 ```
 ## 🚀 Configuracion
 ```bash
