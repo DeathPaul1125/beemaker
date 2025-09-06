@@ -14,7 +14,7 @@ Clona este repositorio en tu máquina:
 git clone https://github.com/DeathPaul1125/beemaker.git
 cd beemaker
 ```
-## 🚀 Configuracion
+## 🛠️  Configuracion
 ```bash
 en el archivo beemaker.bat
 necesitamos cambiar los paths segun el entorno de desarrollo
