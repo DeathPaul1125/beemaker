@@ -1,11 +1,10 @@
-#!/usr/bin/env php
 <?php
 
 use beemaker\Install;
 use beemaker\Utils;
 
 if (php_sapi_name() !== 'cli') {
-    die("Usar: php beemaker");
+    die("Este script solo puede ser ejecutado desde la línea de comandos.");
 }
 
 include $_composer_autoload_path ?? __DIR__ . '/vendor/autoload.php';
@@ -42,7 +41,7 @@ final class Beemaker
     private function help(): void
     {
         echo('BeeFramework Maker v' . self::VERSION . "\n\n"
-                . "crear:\n"
+                . "Uso:\n"
                 . "$ beemaker install\n"
                 . "$ beemaker model\n"
                 . "$ beemaker controller\n\n");
