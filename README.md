@@ -1,6 +1,6 @@
 # BeeFramework CLI
 
-Una herramienta de línea de comandos para acelerar el desarrollo con **[BeeFramework](https://github.com/hispanico/beeframework)**.
+Una herramienta de línea de comandos para acelerar el desarrollo con **[BeeFramework](https://github.com/Moxtrip69/Bee-Framework/)**.
 
 Actualmente soporta la instalación inicial del framework, y en próximas versiones incluirá generación de tablas, modelos, controladores y vistas.
 
