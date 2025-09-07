@@ -28,3 +28,11 @@ cd C:/laragon/www/beemaker
 # Luego, dale permisos de ejecución
 chmod +x beemaker
 ```
+
+## 📌 Roadmap
+
+- [x] Instalación inicial
+- [ ] Generación de tablas
+- [ ] Modelos automáticos
+- [ ] Controladores
+- [ ] Vistas  
