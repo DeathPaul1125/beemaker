@@ -36,3 +36,15 @@ chmod +x beemaker
 - [ ] Modelos automáticos
 - [ ] Controladores
 - [ ] Vistas  
+
+## 🖥️ Uso
+
+Una vez configurado, solo necesitas el comando:
+
+```bash
+beemaker
+
+con la extension help podemos ver los comandos disponibles
+
+beemaker help
+```
