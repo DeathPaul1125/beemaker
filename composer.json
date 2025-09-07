@@ -19,7 +19,8 @@
     "php": ">=8.0",
     "ext-zip": "*",
     "ext-mbstring": "*",
-    "ext-ctype": "*"
+    "ext-ctype": "*",
+    "ext-readline": "*"
   },
   "bin": ["bin/beemaker"],
   "require-dev": {

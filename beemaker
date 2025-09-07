@@ -2,6 +2,7 @@
 <?php
 
 use beemaker\Install;
+use beemaker\Table;
 use beemaker\Utils;
 
 if (php_sapi_name() !== 'cli') {
@@ -32,6 +33,11 @@ final class Beemaker
                 $install->newInstalation();
                 break;
 
+            case 'table':
+                $table = new Table();
+                $table->createTable();
+                break;
+
             case 'help':
             default:
                 $this->help();
@@ -44,6 +50,7 @@ final class Beemaker
         echo('BeeFramework Maker v' . self::VERSION . "\n\n"
                 . "crear:\n"
                 . "$ beemaker install\n"
+                . "$ beemaker table\n"
                 . "$ beemaker model\n"
                 . "$ beemaker controller\n\n");
     }
