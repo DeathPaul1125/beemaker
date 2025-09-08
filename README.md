@@ -12,21 +12,15 @@ Clona este repositorio en tu máquina:
 
 ```bash
 git clone https://github.com/DeathPaul1125/beemaker.git
+
+chmod +x beemaker
+
 cd beemaker
 ```
 ## 🛠️  Configuracion
 ```bash
 en el archivo beemaker.bat
 necesitamos cambiar los paths segun el entorno de desarrollo
-```
-## 📂  Permisos para Carpeta
-```bash
-# Primero, ve a la carpeta de tu proyecto
-ejemplo:
-cd C:/laragon/www/beemaker
-
-# Luego, dale permisos de ejecución
-chmod +x beemaker
 ```
 
 ## 📌 Roadmap
