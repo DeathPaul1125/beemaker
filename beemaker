@@ -2,6 +2,7 @@
 <?php
 
 use beemaker\Install;
+use beemaker\Model;
 use beemaker\Table;
 use beemaker\Utils;
 
@@ -38,6 +39,11 @@ final class Beemaker
                 $table->createTable();
                 break;
 
+            case 'model':
+                $model = new Model();
+                $model->createModel();
+                break;
+
             case 'help':
             default:
                 $this->help();
@@ -51,7 +57,7 @@ final class Beemaker
                 . "crear:\n"
                 . "$ beemaker install\n"
                 . "$ beemaker table\n"
-                . "$ beemaker model\n"
+                . "$ beemaker model (El Modelo crea su propia tabla)\n"
                 . "$ beemaker controller\n\n");
     }
 }
