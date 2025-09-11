@@ -42,3 +42,6 @@ con la extension help podemos ver los comandos disponibles
 
 beemaker help
 ```
+
+### Comando beemaker help
+![Empresa](screens/help.png)
