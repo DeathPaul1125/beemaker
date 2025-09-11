@@ -24,4 +24,11 @@ class Utils
 			echo $message;
 		}
 	}
+
+	public static function basePath()
+	{
+		$basePath = getcwd();
+
+		return $basePath;
+	}
 }
