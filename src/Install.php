@@ -10,7 +10,7 @@ class Install
 	public function newInstalation()
 	{
 		//solicitamos la ruta de la instalacion
-		$pathInstall = readline("\033[32mRuta de instalación (default: current): \033[0m");
+		$pathInstall = getcwd();
 		if (!empty($pathInstall)) {
 			$pathInstall = rtrim($pathInstall, '/') . '/';
 			if (!is_dir($pathInstall)) {
@@ -148,6 +148,19 @@ class Install
 					//return;
 				}
 				Utils::echo("Proyecto abierto en el navegador." . self::OK);
+
+				//Preguntamos si desean abrir el proyecto en visual studio code
+				$open_vscode = readline("\033[32m¿Deseas abrir el proyecto en Visual Studio Code ahora? (s/n, default: n): \033[0m");
+				if (strtolower($open_vscode) === 's') {
+					//abrimos el proyecto en visual studio code
+					$open_code = shell_exec("code " . $pathInstall.$folder);
+					if (empty($open_code)) {
+						Utils::echo("Error al abrir Visual Studio Code. Abortando.\n");
+						return;
+					}
+					Utils::echo("Proyecto abierto en Visual Studio Code." . self::OK);
+				}
+
 			} else {
 				Utils::echo("Recuerda abrir el proyecto en el navegador en http://localhost/$folder" . self::OK);
 			}
