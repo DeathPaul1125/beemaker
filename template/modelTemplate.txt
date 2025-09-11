@@ -16,6 +16,7 @@ class [[MODEL]]Model extends Model {
     // public static $t2 = '__tabla 2__';
     // public static $t3 = '__tabla 3__';
 
+    [[MODEL_VARIABLES_DEFECT]]
     [[MODEL_VARIABLES]]
     // Esquema del Modelo
     // Bind de parámetros
@@ -62,7 +63,7 @@ class [[MODEL]]Model extends Model {
         return parent::remove(self::$t1, ['id' => $id]);
     }
 
-    final function crearTabla()
+    static function crearTabla()
     {
         try {
 
