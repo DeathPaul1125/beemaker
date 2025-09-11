@@ -53,11 +53,11 @@ final class Beemaker
 
     private function help(): void
     {
-        echo('BeeFramework Maker v' . self::VERSION . "\n\n"
+            echo("\n\033[34mBeeFramework Maker v\033[33m" . self::VERSION . "\033[0m\n\n"
                 . "crear:\n"
-                . "$ beemaker install\n"
-                . "$ beemaker table\n"
-                . "$ beemaker model (El Modelo crea su propia tabla)\n"
-                . "$ beemaker controller\n\n");
+                . "\033[32m$ beemaker\033[33m install\n"
+                . "\033[32m$ beemaker\033[33m table\n"
+                . "\033[32m$ beemaker\033[33m model (El Modelo crea su propia tabla)\n"
+                . "\033[32m$ beemaker\033[33m controller\n\n\033[0m");
     }
 }
